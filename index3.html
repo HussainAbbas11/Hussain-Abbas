@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hussain Abbas - YouTube Thumbnail & SEO Expert</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #fce4d6, #ffdab9); /* Gradient Skin Tone */
+            color: #333;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #8b4513, #6b3410); /* Brown Gradient */
+            color: white;
+            padding: 80px 20px;
+            font-size: 48px;
+            font-weight: bold;
+            font-family: 'Pacifico', cursive;
+            animation: fadeInDown 1.5s ease-in-out;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 42px;
+            margin-bottom: 30px;
+            color: #8b4513;
+            animation: slideInLeft 1s ease-in-out;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.8;
+            animation: fadeInUp 1.5s ease-in-out;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .portfolio img {
+            width: 100%;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+            filter: brightness(0.9);
+        }
+
+        .portfolio img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            filter: brightness(1);
+        }
+
+        /* Popup Modal */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .popup img {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 15px;
+        }
+
+        .close {
+            background: #8b4513;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 18px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .close:hover {
+            background: #6b3410;
+            transform: scale(1.05);
+        }
+
+        /* Contact Section */
+        .contact {
+            margin-top: 60px;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #8b4513, #6b3410);
+            color: white;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact p {
+            color: #ffcc00; /* Yellow for visibility */
+        }
+
+        .contact a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 24px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .contact a:hover {
+            color: #ffdd33;
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Hussain Abbas - YouTube Thumbnail & SEO Expert
+    </header>
+    
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm Hussain Abbas, a professional YouTube Thumbnail Designer and SEO expert with over 5 years of experience. 
+            I specialize in creating <strong>eye-catching thumbnails</strong> that boost click-through rates and optimizing videos for maximum 
+            visibility on YouTube. My goal is to help creators grow their channels and reach a wider audience through 
+            visually appealing designs and effective SEO strategies. Let’s make your content stand out!
+        </p>
+        
+        <h2>Portfolio</h2>
+        <div class="portfolio">
+            <img src="DALL·E-2025-03-06-12.38.jpg" alt="YouTube Thumbnail 1" onclick="showPopup('DALL·E-2025-03-06-12.38.jpg')">
+            <img src="DALL·E-2025-03-07-16.22.jpg" alt="YouTube Thumbnail 2" onclick="showPopup('DALL·E-2025-03-07-16.22.jpg')">
+            <img src="DALL·E-2025-03-09-21.01.jpg" alt="YouTube Thumbnail 3" onclick="showPopup('DALL·E-2025-03-09-21.01.jpg')">
+            <img src="thumbnail-5560bcc7-2499-457f-812c-3864cf701b69.jpg" alt="YouTube Thumbnail 4" onclick="showPopup('thumbnail-5560bcc7-2499-457f-812c-3864cf701b69.jpg')">
+            <img src="thumbnail-0d45e1b8-a187-456e-952c-38aeb5c02e4c.jpg" alt="YouTube Thumbnail 5" onclick="showPopup('thumbnail-0d45e1b8-a187-456e-952c-38aeb5c02e4c.jpg')">
+            <img src="thumbnail-e449f858-9c55-4320-ae4c-b66d2033817f.jpeg" alt="YouTube Thumbnail 6" onclick="showPopup('thumbnail-e449f858-9c55-4320-ae4c-b66d2033817f.jpeg')">
+            <img src="vidiq_thumbnail_1.png" alt="YouTube Thumbnail 7" onclick="showPopup('vidiq_thumbnail_1.png')">
+            <img src="thumbnail-e707a7ad-4d17-41c9-8fe1-b4437a4a0afc.jpeg" alt="YouTube Thumbnail 8" onclick="showPopup('thumbnail-e707a7ad-4d17-41c9-8fe1-b4437a4a0afc.jpeg')">
+            <img src="thumbnail-f86be629-d912-49bb-86bf-0232a449e48d.jpeg" alt="YouTube Thumbnail 9" onclick="showPopup('thumbnail-f86be629-d912-49bb-86bf-0232a449e48d.jpeg')">
+            <img src="thumbnail-54c2b01c-ff13-49b1-8607-2524e64690ea.jpeg" alt="YouTube Thumbnail 10" onclick="showPopup('thumbnail-54c2b01c-ff13-49b1-8607-2524e64690ea.jpeg')">
+            <img src="thumbnail-d969156b-d058-4b00-a18e-212b2ff22f3c.jpeg" alt="YouTube Thumbnail 11" onclick="showPopup('thumbnail-d969156b-d058-4b00-a18e-212b2ff22f3c.jpeg')">
+            <img src="thumbnail-b4f4b8ba-5673-4255-8a16-2062cffdc056.jpeg" alt="YouTube Thumbnail 12" onclick="showPopup('thumbnail-b4f4b8ba-5673-4255-8a16-2062cffdc056.jpeg')">
+            <img src="thumbnail-212c8f7b-5fdd-4e7b-aa1f-b00aa1b35dd6.jpeg" alt="YouTube Thumbnail 13" onclick="showPopup('thumbnail-212c8f7b-5fdd-4e7b-aa1f-b00aa1b35dd6.jpeg')">
+            <img src="thumbnail-fc6266d6-b4da-450f-8ae6-6c3c255d75e9.jpeg" alt="YouTube Thumbnail 14" onclick="showPopup('thumbnail-fc6266d6-b4da-450f-8ae6-6c3c255d75e9.jpeg')">
+            <img src="thumbnail-3e94c992-ea7f-45eb-a15f-bb93ca0d40fa.jpeg" alt="YouTube Thumbnail 15" onclick="showPopup('thumbnail-3e94c992-ea7f-45eb-a15f-bb93ca0d40fa.jpeg')">
+            <img src="thumbnail-77c1c765-df55-4381-a5b7-f01cf936530c.jpeg" alt="YouTube Thumbnail 16" onclick="showPopup('thumbnail-77c1c765-df55-4381-a5b7-f01cf936530c.jpeg')">
+            <img src="thumbnail-46daa233-7609-4220-9454-8a48c53444e9.jpeg" alt="YouTube Thumbnail 17" onclick="showPopup('thumbnail-46daa233-7609-4220-9454-8a48c53444e9.jpeg')">
+            <img src="thumbnail-51d87a14-bd36-4ccc-8202-b20cfef603f1.jpeg" alt="YouTube Thumbnail 18" onclick="showPopup('thumbnail-51d87a14-bd36-4ccc-8202-b20cfef603f1.jpeg')">
+            <img src="thumbnail-3d6c9eb1-e825-4b70-a6d3-27e7e1c493e6.jpeg" alt="YouTube Thumbnail 19" onclick="showPopup('thumbnail-3d6c9eb1-e825-4b70-a6d3-27e7e1c493e6.jpeg')">
+        </div>
+    </div>
+    
+    <div class="popup" id="popup">
+        <button class="close" onclick="hidePopup()">Close</button>
+        <img id="popupImg" src="">
+    </div>
+    
+    <div class="contact">
+        <h2>Contact Me</h2>
+        <p>Let’s work together to take your YouTube channel to the next level!</p>
+        <p><a href="https://www.fiverr.com/s/o8K7m3V" target="_blank">Hire Me on Fiverr</a></p>
+    </div>
+    
+    <script>
+        function showPopup(imageSrc) {
+            document.getElementById('popupImg').src = imageSrc;
+            document.getElementById('popup').style.display = 'block';
+        }
+        function hidePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
